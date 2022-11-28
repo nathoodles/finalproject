@@ -19,7 +19,7 @@ $.getJSON('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/ser
 
 
     $('#sevenDay').append('<tr>');
-    for(let i = 0; i< 7; i++){
+    for(let i = 1; i< 7; i++){
         date = info[i][0]; 
         date = date.slice(5);
         date = date.replace('-', '/'); 
@@ -27,7 +27,7 @@ $.getJSON('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/ser
     }
     $('#sevenDay').append('</tr>');
     $('#sevenDay').append('<tr>');
-    for(let i = 0; i< 7; i++){
+    for(let i = 1; i < 7; i++){
         date = info[i][0]; 
         date = date.slice(5);
         date = date.replace('-', '/');
@@ -43,7 +43,7 @@ $.getJSON('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/ser
     }
     $('#sevenDay').append('</tr>');
     $('#sevenDay').append('<tr>');
-    for(let i = 0; i< 7; i++){
+    for(let i = 1; i< 7; i++){
         $('#sevenDay').append('<td>' + info[i][4] + '&#8457</td>');
     }
     $('#sevenDay').append('</tr>');

@@ -1,8 +1,4 @@
-@font-face {
-    font-family: 'Nabla';
-    src: url(https://fonts.googleapis.com/css2?family=Nabla&display=swap) format('woff2');
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 
 html{
     background-image: url('../images/background.jpg');

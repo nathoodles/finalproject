@@ -18,12 +18,16 @@ $.getJSON('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/ser
     $('#currentDay').append('<th>High: ' + info[0][4] + '&#8457<br>Low: ' + info[0][5] +'&#8457<br>Chance of rain: ' + info[0][2] + '%</th>');
 
 
+    const d = new Date();
+    let day = d.getDay() + 1;
+    let days =["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
     $('#sevenDay').append('<tr>');
     for(let i = 1; i< 7; i++){
-        date = info[i][0]; 
-        date = date.slice(5);
-        date = date.replace('-', '/'); 
-        $('#sevenDay').append('<td>' + date + '</td>');
+        if(day > 6){
+            day = 0;
+        }
+        $('#sevenDay').append('<td>' + days[day] + '</td>');
+        day++;
     }
     $('#sevenDay').append('</tr>');
     $('#sevenDay').append('<tr>');

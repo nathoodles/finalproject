@@ -15,7 +15,7 @@ $.getJSON('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/ser
     }else{
         $('#currentDay').append('<th><img src="images/sunny.webp" alt="Sunny"></th>');
     }
-    $('#currentDay').append('<th><br> <h2>Today</h2>Max: ' + info[0][4] + '&#8457<br>Min: ' + info[0][5] +'&#8457<br>Chance of rain: ' + info[0][2] + '%</th>');
+    $('#currentDay').append('<th>High: ' + info[0][4] + '&#8457<br>Low: ' + info[0][5] +'&#8457<br>Chance of rain: ' + info[0][2] + '%</th>');
 
 
     $('#sevenDay').append('<tr>');
